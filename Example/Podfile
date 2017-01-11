@@ -1,0 +1,6 @@
+use_frameworks!
+target 'URBNJSONDecodable_Tests' do
+  pod 'URBNJSONDecodable', :path => '../'
+  
+  
+end
