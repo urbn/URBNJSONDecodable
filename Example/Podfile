@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:urbn/URBNPrivatePodSpec.git'
+
+use_frameworks!
+
+target "URBNJSONDecodable-Example" do
+  pod 'URBNJSONDecodable', :path => '../'
+
+  target "URBNJSONDecodable-ExampleTests" do
+    inherit! :search_paths
+  end
+end
