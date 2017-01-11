@@ -1,6 +1,6 @@
 # URBNJSONDecodable
 
-[![CI Status](http://img.shields.io/travis/Jason Grandelli/URBNJSONDecodable.svg?style=flat)](https://travis-ci.org/Jason Grandelli/URBNJSONDecodable)
+[![CI Status](http://img.shields.io/travis/urbn/URBNJSONDecodable.svg?style=flat)](https://travis-ci.org/urbn/URBNJSONDecodable)
 [![Version](https://img.shields.io/cocoapods/v/URBNJSONDecodable.svg?style=flat)](http://cocoapods.org/pods/URBNJSONDecodable)
 [![License](https://img.shields.io/cocoapods/l/URBNJSONDecodable.svg?style=flat)](http://cocoapods.org/pods/URBNJSONDecodable)
 [![Platform](https://img.shields.io/cocoapods/p/URBNJSONDecodable.svg?style=flat)](http://cocoapods.org/pods/URBNJSONDecodable)
@@ -22,7 +22,7 @@ pod "URBNJSONDecodable"
 
 ## Author
 
-Jason Grandelli, jasongrandelli@gmail.com
+URBN Mobile Team, mobileteam@urbn.com
 
 ## License
 
