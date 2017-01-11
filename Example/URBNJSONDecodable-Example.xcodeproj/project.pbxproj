@@ -13,7 +13,8 @@
 		451030811E268C29002AF3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4510307F1E268C29002AF3B2 /* Main.storyboard */; };
 		451030831E268C29002AF3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451030821E268C29002AF3B2 /* Assets.xcassets */; };
 		451030861E268C29002AF3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451030841E268C29002AF3B2 /* LaunchScreen.storyboard */; };
-		451030911E268C29002AF3B2 /* URBNJSONDecodable_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451030901E268C29002AF3B2 /* URBNJSONDecodable_ExampleTests.swift */; };
+		4510309C1E268E55002AF3B2 /* JSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */; };
+		4510309E1E268EDB002AF3B2 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510309D1E268EDB002AF3B2 /* TestHelper.swift */; };
 		AB8E015BBC963BA7EB237C24 /* Pods_URBNJSONDecodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EEAB76AC0AF7606F8DEC8B /* Pods_URBNJSONDecodable_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +39,9 @@
 		451030851E268C29002AF3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451030871E268C29002AF3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4510308C1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URBNJSONDecodable-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		451030901E268C29002AF3B2 /* URBNJSONDecodable_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBNJSONDecodable_ExampleTests.swift; sourceTree = "<group>"; };
 		451030921E268C29002AF3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodableTests.swift; sourceTree = "<group>"; };
+		4510309D1E268EDB002AF3B2 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		49EEAB76AC0AF7606F8DEC8B /* Pods_URBNJSONDecodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBNJSONDecodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7CE1A68654668F9D3AC20D /* Pods-URBNJSONDecodable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-Example/Pods-URBNJSONDecodable-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC1A097198772611ACC3C6A5 /* Pods-URBNJSONDecodable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-Example/Pods-URBNJSONDecodable-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 		4510308F1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				451030901E268C29002AF3B2 /* URBNJSONDecodable_ExampleTests.swift */,
+				4510309D1E268EDB002AF3B2 /* TestHelper.swift */,
+				4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */,
 				451030921E268C29002AF3B2 /* Info.plist */,
 			);
 			path = "URBNJSONDecodable-ExampleTests";
@@ -341,7 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451030911E268C29002AF3B2 /* URBNJSONDecodable_ExampleTests.swift in Sources */,
+				4510309C1E268E55002AF3B2 /* JSONDecodableTests.swift in Sources */,
+				4510309E1E268EDB002AF3B2 /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +551,7 @@
 				451030971E268C29002AF3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451030981E268C29002AF3B2 /* Build configuration list for PBXNativeTarget "URBNJSONDecodable-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +560,7 @@
 				4510309A1E268C29002AF3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
