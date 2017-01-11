@@ -16,7 +16,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/urbn/URBNJSONDecodable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'URBN Mobile Team' => 'mobileteam@urbn.com' }
-  s.source           = { :git => 'git@github.com:urbn/URBNJSONDecodable.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/urbn/URBNJSONDecodable.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
