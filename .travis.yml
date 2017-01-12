@@ -7,8 +7,9 @@ language: swift
 
 before_install:
 - gem install cocoapods # Since Travis is not always on latest version
+- echo 3.0 > .swift-version
 - pod install --project-directory=Example
 
 script:
-- set -o pipefail && xcodebuild test -workspace Example/URBNJSONDecodable-Example.xcworkspace -scheme URBNJSONDecodable-Example -sdk iphonesimulator10.2 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint --allow-warnings
+- set -o pipefail && xcodebuild test -workspace Example/URBNJSONDecodable-Example.xcworkspace -scheme URBNJSONDecodable-Example -sdk iphonesimulator10.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+#- pod lib lint --allow-warnings
