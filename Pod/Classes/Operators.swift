@@ -159,6 +159,33 @@ public func =>?<T: JSONDecodable>(lhs: Any, path: [String]) throws -> [String: T
     return try [String: T].decodeAllowInvalid(value)
 }
 
+/// Decoding to Any / [Any]
+public func =><T: Any>(lhs: Any, path: String) throws -> [T] {
+    return try lhs => [path]
+}
+
+public func =><T: Any>(lhs: Any, path: [String]) throws -> [T] {
+    let value = try path.reduce(lhs, { (val, key) -> Any in
+        return try val => key
+    })
+    
+    if let arr = value as? [T] {
+        return arr
+    }
+    
+    throw TypeMismatchError(expected: [Any].self, actual: type(of: value), object: value)
+}
+
+public func =>??<T: Any>(lhs: Any?, path: String) -> [T]? {
+    guard let lhs = lhs else { return nil }
+    return try? lhs => [path]
+}
+
+public func =>??<T: Any>(lhs: Any?, path: [String]) -> [T]? {
+    guard let lhs = lhs else { return nil }
+    return try? lhs => path
+}
+
 /// Try to decode as T, or throw. Will return nil if the object at the keypath is NSNull.
 public func =>?? <T: JSONDecodable>(lhs: Any?, rhs: String) -> T? {
     guard let lhs = lhs else { return nil }
