@@ -43,31 +43,12 @@ internal func checkKey(_ obj: BaseArrayType, key: String, root: Any? = nil) thro
     return try obj.map({ try checkKey(try decodeObject($0), key: key) })
 }
 
-internal func checkType<T: Any>(_ obj: Any, root: Any? = nil) throws -> T {
+internal func checkType<T>(_ obj: Any, root: Any? = nil) throws -> T {
     guard let val = obj as? T else {
         var err = TypeMismatchError(expected: T.self, actual: type(of: obj).self, object: obj)
         err.rootObject = root ?? obj
         throw err
     }
-    return val
-}
-
-internal func checkType<T>(_ obj: Any, root: Any? = nil) throws -> [T] {
-    guard let val = obj as? [T] else {
-        var err = TypeMismatchError(expected: T.self, actual: type(of: obj).self, object: obj)
-        err.rootObject = root ?? obj
-        throw err
-    }
-    return val
-}
-
-internal func checkType<T, U>(_ obj: Any, root: Any? = nil) throws -> [T: U] {
-    guard let val = obj as? [T: U] else {
-        var err = TypeMismatchError(expected: [T: U].self, actual: type(of: obj).self, object: obj)
-        err.rootObject = root ?? obj
-        throw err
-    }
-    
     return val
 }
 
