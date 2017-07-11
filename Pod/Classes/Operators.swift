@@ -203,8 +203,19 @@ public func =><T>(lhs: Any, path: String) throws -> [String: T] {
         let dict = json[path] as? [String: T]{
         return dict
     }
-
+    
     throw TypeMismatchError(expected: [String: Any].self, actual: type(of: lhs), object: lhs)
+}
+
+public func =><T: JSONDecodable>(lhs: Any, rhs: String) throws -> [String: T] {
+    return try lhs => [rhs]
+}
+
+public func =><T: JSONDecodable>(lhs: Any, path: [String]) throws -> [String: T] {
+    let value = try path.reduce(lhs, { (val, key) -> Any in
+        return try val => key
+    })
+    return try [String: T].decode(value)
 }
 
 public func =>??<T>(lhs: Any?, path: String) -> [String: T]? {
