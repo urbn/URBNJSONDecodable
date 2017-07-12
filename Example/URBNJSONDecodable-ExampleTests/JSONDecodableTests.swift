@@ -95,4 +95,61 @@ class OperatorTests: XCTestCase {
         
         XCTAssertEqual(strArr?.count, 2)
     }
+    
+    func testNestedDictionaryOperators() {
+        guard let json = jsonFor("NestedObjectTest") else {
+            XCTFail("Error decoding Nested Object Test")
+            return
+        }
+        
+        do {
+            let nestedContainer = try NestedContainer.decode(json)
+            XCTAssertEqual(nestedContainer.nestedObjects.keys.count, 2)
+            
+            guard let nestedObject = nestedContainer.nestedObjects["FIRST"] else {
+                XCTFail("Should serialized nested objects in dicts")
+                return
+            }
+            XCTAssertEqual(nestedObject.string, "STRING")
+            XCTAssertEqual(nestedObject.int, 42)
+        }
+        catch {
+            XCTFail("Error decoding NestedObjects: \(error)")
+        }
+    }
+}
+
+//MARK: Test Objects
+class NestedObject: NSObject, JSONDecodable {
+    let string: String
+    let int: Int
+    
+    public required init(json: Any) throws {
+        self.string = try json => "string"
+        self.int = try json => "int"
+    }
+    
+    static func decode(_ json: Any) throws -> Self {
+        return try self.init(json: json)
+    }
+    
+    public override var description: String {
+        return "<\(type(of: self)): \(Unmanaged.passUnretained(self).toOpaque())>"
+    }
+}
+
+class NestedContainer: NSObject, JSONDecodable {
+    let nestedObjects: [String: NestedObject]
+    
+    public required init(json: Any) throws {
+        self.nestedObjects = try json => "nestedObject"
+    }
+    
+    static func decode(_ json: Any) throws -> Self {
+        return try self.init(json: json)
+    }
+    
+    public override var description: String {
+        return "<\(type(of: self)): \(Unmanaged.passUnretained(self).toOpaque())>"
+    }
 }

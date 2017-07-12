@@ -1,0 +1,12 @@
+{
+    "nestedObject": {
+        "FIRST": {
+            "string": "STRING",
+            "int": 42
+        },
+        "SECOND": {
+            "string": "STRING",
+            "int": 42
+        }
+    }
+}
