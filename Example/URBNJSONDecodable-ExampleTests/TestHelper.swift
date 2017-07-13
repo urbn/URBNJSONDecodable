@@ -10,7 +10,7 @@ import XCTest
 
 public func jsonFor(_ path: String, ext: String = "json") -> Any? {
     
-    if let testBundle = Bundle(identifier: "com.urbn.URBNSwiftyModelsTests"), let path = testBundle.path(forResource: path, ofType: ext), let d = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+    if let testBundle = Bundle(identifier: "com.urbn.URBNJSONDecodable-ExampleTests"), let path = testBundle.path(forResource: path, ofType: ext), let d = try? Data(contentsOf: URL(fileURLWithPath: path)) {
         return try? JSONSerialization.jsonObject(with: d, options: [])
     }
     

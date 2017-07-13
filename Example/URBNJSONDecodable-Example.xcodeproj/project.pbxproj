@@ -16,6 +16,7 @@
 		4510309C1E268E55002AF3B2 /* JSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */; };
 		4510309E1E268EDB002AF3B2 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510309D1E268EDB002AF3B2 /* TestHelper.swift */; };
 		AB8E015BBC963BA7EB237C24 /* Pods_URBNJSONDecodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EEAB76AC0AF7606F8DEC8B /* Pods_URBNJSONDecodable_Example.framework */; };
+		CBBB35431F16A841001A7D3E /* NestedObjectTest.json in Resources */ = {isa = PBXBuildFile; fileRef = CBBB35421F16A841001A7D3E /* NestedObjectTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4510309D1E268EDB002AF3B2 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		49EEAB76AC0AF7606F8DEC8B /* Pods_URBNJSONDecodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBNJSONDecodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7CE1A68654668F9D3AC20D /* Pods-URBNJSONDecodable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-Example/Pods-URBNJSONDecodable-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CBBB35421F16A841001A7D3E /* NestedObjectTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NestedObjectTest.json; sourceTree = "<group>"; };
 		CC1A097198772611ACC3C6A5 /* Pods-URBNJSONDecodable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-Example/Pods-URBNJSONDecodable-Example.release.xcconfig"; sourceTree = "<group>"; };
 		DF84392635EBEF16BF48C665 /* Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-ExampleTests/Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 		4510308F1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBBB35411F16A822001A7D3E /* Data */,
 				4510309D1E268EDB002AF3B2 /* TestHelper.swift */,
 				4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */,
 				451030921E268C29002AF3B2 /* Info.plist */,
@@ -129,6 +132,14 @@
 				210BD1F2110A1E613126D279 /* Pods_URBNJSONDecodable_ExampleTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBBB35411F16A822001A7D3E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CBBB35421F16A841001A7D3E /* NestedObjectTest.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBB35431F16A841001A7D3E /* NestedObjectTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		232F50C0AD85DF0E39208166 /* [CP] Check Pods Manifest.lock */ = {
@@ -280,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8E0395761564B106801A0839 /* [CP] Copy Pods Resources */ = {
