@@ -28,7 +28,7 @@ public func XCTAssertThrowsError<T, E>(_ expression: @autoclosure () throws -> T
     }
     catch is E { }
     catch let err {
-        XCTFail("Expected error of \(E.self) got \(type(of: err).self) - \(message)", file: file, line: line)
+        XCTFail("Expected error of \(E.self) got \(Swift.type(of: err).self) - \(message)", file: file, line: line)
     }
 }
 
