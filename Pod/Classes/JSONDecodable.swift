@@ -41,7 +41,7 @@ extension Array where Element: JSONDecodable {
      */
     public static func decodeAllowInvalid(_ json: Any) throws -> [Element] {
         let jsonVal: [Any] = try checkType(json)
-        return jsonVal.flatMap({ try? Element.decode($0) })
+        return jsonVal.compactMap{ try? Element.decode($0) }
     }
     
     public static func decode(_ json: Any) throws -> [Element] {
