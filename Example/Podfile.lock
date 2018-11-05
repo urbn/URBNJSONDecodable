@@ -1,5 +1,5 @@
 PODS:
-  - URBNJSONDecodable (2.0)
+  - URBNJSONDecodable (2.0.1)
 
 DEPENDENCIES:
   - URBNJSONDecodable (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  URBNJSONDecodable: 5bf4b568504941bca1e8e48ba793748f5a8ce4a1
+  URBNJSONDecodable: 83736fd400ff1b2cda9672af1d011fff8233f5a1
 
 PODFILE CHECKSUM: 2ee5e9465a58bd7d2a5334b76e0bdbdb36ae34cb
 
