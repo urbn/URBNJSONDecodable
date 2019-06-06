@@ -8,9 +8,24 @@
 
 import XCTest
 
-public func jsonFor(_ path: String, ext: String = "json") -> Any? {
+public func nestedObjectJSON() -> Any? {
     
-    if let testBundle = Bundle(identifier: "com.urbn.URBNJSONDecodable-ExampleTests"), let path = testBundle.path(forResource: path, ofType: ext), let d = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+let nestedObjectString = """
+    {
+        "nestedObject": {
+            "FIRST": {
+                "string": "STRING",
+                "int": 42
+            },
+            "SECOND": {
+                "string": "STRING",
+                "int": 42
+            }
+        }
+    }
+"""
+    
+    if let d = try? nestedObjectString.data(using: .utf8) {
         return try? JSONSerialization.jsonObject(with: d, options: [])
     }
     
