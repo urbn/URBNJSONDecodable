@@ -19,6 +19,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/urbn/URBNJSONDecodable.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
   s.swift_version = '4.2'
 
