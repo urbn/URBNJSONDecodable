@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'URBNJSONDecodable'
-  s.version          = '2.1'
+  s.version          = '2.1.1'
   s.summary          = 'A swifty, lightweight, operator based approach to decoding JSON.'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/urbn/URBNJSONDecodable.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
   s.swift_version = '4.2'
 
