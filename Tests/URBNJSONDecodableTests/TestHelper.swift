@@ -25,7 +25,7 @@ let nestedObjectString = """
     }
 """
     
-    if let d = try? nestedObjectString.data(using: .utf8) {
+    if let d = nestedObjectString.data(using: .utf8) {
         return try? JSONSerialization.jsonObject(with: d, options: [])
     }
     
