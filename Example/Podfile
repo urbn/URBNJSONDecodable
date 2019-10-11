@@ -6,8 +6,4 @@ platform :ios, '9.0'
 
 target "URBNJSONDecodable-Example" do
   pod 'URBNJSONDecodable', :path => '../'
-
-  target "URBNJSONDecodable-ExampleTests" do
-    inherit! :search_paths
-  end
 end

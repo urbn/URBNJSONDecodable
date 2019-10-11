@@ -7,27 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DFA636FB157E79C32F21072 /* Pods_URBNJSONDecodable_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210BD1F2110A1E613126D279 /* Pods_URBNJSONDecodable_ExampleTests.framework */; };
 		4510307C1E268C29002AF3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510307B1E268C29002AF3B2 /* AppDelegate.swift */; };
 		4510307E1E268C29002AF3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510307D1E268C29002AF3B2 /* ViewController.swift */; };
 		451030811E268C29002AF3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4510307F1E268C29002AF3B2 /* Main.storyboard */; };
 		451030831E268C29002AF3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451030821E268C29002AF3B2 /* Assets.xcassets */; };
 		451030861E268C29002AF3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451030841E268C29002AF3B2 /* LaunchScreen.storyboard */; };
-		4510309C1E268E55002AF3B2 /* JSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */; };
-		4510309E1E268EDB002AF3B2 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510309D1E268EDB002AF3B2 /* TestHelper.swift */; };
 		AB8E015BBC963BA7EB237C24 /* Pods_URBNJSONDecodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EEAB76AC0AF7606F8DEC8B /* Pods_URBNJSONDecodable_Example.framework */; };
-		CBBB35431F16A841001A7D3E /* NestedObjectTest.json in Resources */ = {isa = PBXBuildFile; fileRef = CBBB35421F16A841001A7D3E /* NestedObjectTest.json */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4510308D1E268C29002AF3B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 451030701E268C29002AF3B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 451030771E268C29002AF3B2;
-			remoteInfo = "URBNJSONDecodable-Example";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		17C33F7ECC17F0A99057EE06 /* Pods-URBNJSONDecodable-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-ExampleTests/Pods-URBNJSONDecodable-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,13 +25,8 @@
 		451030821E268C29002AF3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451030851E268C29002AF3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451030871E268C29002AF3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4510308C1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URBNJSONDecodable-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		451030921E268C29002AF3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodableTests.swift; sourceTree = "<group>"; };
-		4510309D1E268EDB002AF3B2 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		49EEAB76AC0AF7606F8DEC8B /* Pods_URBNJSONDecodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBNJSONDecodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7CE1A68654668F9D3AC20D /* Pods-URBNJSONDecodable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-Example/Pods-URBNJSONDecodable-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CBBB35421F16A841001A7D3E /* NestedObjectTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NestedObjectTest.json; sourceTree = "<group>"; };
 		CC1A097198772611ACC3C6A5 /* Pods-URBNJSONDecodable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-Example/Pods-URBNJSONDecodable-Example.release.xcconfig"; sourceTree = "<group>"; };
 		DF84392635EBEF16BF48C665 /* Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNJSONDecodable-ExampleTests/Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,14 +37,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8E015BBC963BA7EB237C24 /* Pods_URBNJSONDecodable_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		451030891E268C29002AF3B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DFA636FB157E79C32F21072 /* Pods_URBNJSONDecodable_ExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				4510307A1E268C29002AF3B2 /* URBNJSONDecodable-Example */,
-				4510308F1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests */,
 				451030791E268C29002AF3B2 /* Products */,
 				0AD9614926330BA6E1E736C8 /* Pods */,
 				86B70859777AA6695873DBA7 /* Frameworks */,
@@ -96,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				451030781E268C29002AF3B2 /* URBNJSONDecodable-Example.app */,
-				4510308C1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,17 +85,6 @@
 			path = "URBNJSONDecodable-Example";
 			sourceTree = "<group>";
 		};
-		4510308F1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				CBBB35411F16A822001A7D3E /* Data */,
-				4510309D1E268EDB002AF3B2 /* TestHelper.swift */,
-				4510309B1E268E55002AF3B2 /* JSONDecodableTests.swift */,
-				451030921E268C29002AF3B2 /* Info.plist */,
-			);
-			path = "URBNJSONDecodable-ExampleTests";
-			sourceTree = "<group>";
-		};
 		86B70859777AA6695873DBA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,14 +92,6 @@
 				210BD1F2110A1E613126D279 /* Pods_URBNJSONDecodable_ExampleTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CBBB35411F16A822001A7D3E /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				CBBB35421F16A841001A7D3E /* NestedObjectTest.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,25 +116,6 @@
 			productReference = 451030781E268C29002AF3B2 /* URBNJSONDecodable-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4510308B1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 451030981E268C29002AF3B2 /* Build configuration list for PBXNativeTarget "URBNJSONDecodable-ExampleTests" */;
-			buildPhases = (
-				232F50C0AD85DF0E39208166 /* [CP] Check Pods Manifest.lock */,
-				451030881E268C29002AF3B2 /* Sources */,
-				451030891E268C29002AF3B2 /* Frameworks */,
-				4510308A1E268C29002AF3B2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4510308E1E268C29002AF3B2 /* PBXTargetDependency */,
-			);
-			name = "URBNJSONDecodable-ExampleTests";
-			productName = "URBNJSONDecodable-ExampleTests";
-			productReference = 4510308C1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,27 +123,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Jason Grandelli";
 				TargetAttributes = {
 					451030771E268C29002AF3B2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6438N9QD27;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
-					};
-					4510308B1E268C29002AF3B2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6438N9QD27;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 451030771E268C29002AF3B2;
 					};
 				};
 			};
 			buildConfigurationList = 451030731E268C29002AF3B2 /* Build configuration list for PBXProject "URBNJSONDecodable-Example" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -222,7 +148,6 @@
 			projectRoot = "";
 			targets = (
 				451030771E268C29002AF3B2 /* URBNJSONDecodable-Example */,
-				4510308B1E268C29002AF3B2 /* URBNJSONDecodable-ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,14 +160,6 @@
 				451030861E268C29002AF3B2 /* LaunchScreen.storyboard in Resources */,
 				451030831E268C29002AF3B2 /* Assets.xcassets in Resources */,
 				451030811E268C29002AF3B2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4510308A1E268C29002AF3B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBBB35431F16A841001A7D3E /* NestedObjectTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,24 +202,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		232F50C0AD85DF0E39208166 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-URBNJSONDecodable-ExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -315,24 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		451030881E268C29002AF3B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4510309C1E268E55002AF3B2 /* JSONDecodableTests.swift in Sources */,
-				4510309E1E268EDB002AF3B2 /* TestHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4510308E1E268C29002AF3B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 451030771E268C29002AF3B2 /* URBNJSONDecodable-Example */;
-			targetProxy = 4510308D1E268C29002AF3B2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4510307F1E268C29002AF3B2 /* Main.storyboard */ = {
@@ -358,6 +240,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -416,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -473,8 +357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.urbn.URBNJSONDecodable-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -488,42 +371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.urbn.URBNJSONDecodable-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		451030991E268C29002AF3B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF84392635EBEF16BF48C665 /* Pods-URBNJSONDecodable-ExampleTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6438N9QD27;
-				INFOPLIST_FILE = "URBNJSONDecodable-ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.urbn.URBNJSONDecodable-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URBNJSONDecodable-Example.app/URBNJSONDecodable-Example";
-			};
-			name = Debug;
-		};
-		4510309A1E268C29002AF3B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17C33F7ECC17F0A99057EE06 /* Pods-URBNJSONDecodable-ExampleTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6438N9QD27;
-				INFOPLIST_FILE = "URBNJSONDecodable-ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.urbn.URBNJSONDecodable-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URBNJSONDecodable-Example.app/URBNJSONDecodable-Example";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -544,15 +392,6 @@
 			buildConfigurations = (
 				451030961E268C29002AF3B2 /* Debug */,
 				451030971E268C29002AF3B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		451030981E268C29002AF3B2 /* Build configuration list for PBXNativeTarget "URBNJSONDecodable-ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				451030991E268C29002AF3B2 /* Debug */,
-				4510309A1E268C29002AF3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

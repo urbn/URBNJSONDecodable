@@ -7,18 +7,14 @@
 //
 
 import XCTest
-import URBNJSONDecodable
-
+@testable import URBNJSONDecodable
 
 /**
- The purpose of these tests are to validate the intentions of 
- convenience operators for getting information from objects 
+ The purpose of these tests are to validate the intentions of
+ convenience operators for getting information from objects
  */
-
-class OperatorTests: XCTestCase {
-   
+final class URBNJSONDecodableTests: XCTestCase {
     func testBasicOperatorExample() {
-        
         let testObject: Any = [
             "string": "stringvalue",
             "number": 1,
@@ -27,19 +23,14 @@ class OperatorTests: XCTestCase {
         ]
         
         do {
-            
             let stringValue: String = try testObject => "string"
-            
             XCTAssertEqual(stringValue, "stringvalue")
-            
         } catch {
             XCTFail("Got error parsing testObject: \(error)")
         }
-        
     }
-
+    
     func testOperatorErrors() {
-        
         let invalidJson: Any = [1,1,2]
         let json: Any = ["val": "someVal"]
         
@@ -47,13 +38,16 @@ class OperatorTests: XCTestCase {
         XCTAssertThrowsError(try json => "blah" as Any, MissingKeyError.self)
         XCTAssertThrowsError(try json => "val" as Int, TypeMismatchError.self)
     }
-
+    
     func testOperatorChain() {
-        
-        let json: Any = ["dict": ["x2": ["val": "123"], "x3": ["1","2"]]]
+        let json: Any = [
+            "dict": [
+                "x2": ["val": "123"],
+                "x3": ["1","2"]
+            ]
+        ]
         
         do {
-            
             let _: Any = try json => "dict"
             let _: [String: String]? = try json => "dict" => "x2" as? [String: String]
             let _: [String] = try json => "dict" => "x3"
@@ -63,16 +57,16 @@ class OperatorTests: XCTestCase {
             //XCTAssertEqual(x2!, dict["x2"])
             //XCTAssertEqual(x3, dict["x3"])
             
-        } catch let err {
-            XCTFail("This should not happen.  Got \(err)")
+        } catch {
+            XCTFail("This should not happen.  Got \(error)")
         }
     }
-
+    
     func testDateParsing() {
         XCTAssertNoThrows(try Date.decode(989797898.0))
         XCTAssertThrowsError(try Date.decode("asdjfij"), TypeMismatchError.self)
     }
-
+    
     func testLocaleParsing() {
         let localeInfo = ["locale": "en-US"]
         XCTAssertNoThrows(try Locale.decode(localeInfo))
@@ -81,7 +75,7 @@ class OperatorTests: XCTestCase {
         // Do we want to account for locales that are not on the system?
         XCTAssertThrowsError(try Locale.decode(["locale": "bullshit"]), GeneralError.self)
     }
-
+    
     func testOptionalOperatorList() {
         let arr = [
             ["val": "someVal"],
@@ -90,14 +84,12 @@ class OperatorTests: XCTestCase {
         ]
         
         let json: Any = ["dict": arr]
-        
         let strArr: [String]? = json =>?? "dict" => "val"
-        
         XCTAssertEqual(strArr?.count, 2)
     }
     
     func testNestedDictionaryOperators() {
-        guard let json = jsonFor("NestedObjectTest") else {
+        guard let json = nestedObjectJSON() else {
             XCTFail("Error decoding Nested Object Test")
             return
         }
@@ -117,6 +109,16 @@ class OperatorTests: XCTestCase {
             XCTFail("Error decoding NestedObjects: \(error)")
         }
     }
+
+    static var allTests = [
+        ("testBasicOperatorExample", testBasicOperatorExample),
+        ("testOperatorErrors", testOperatorErrors),
+        ("testOperatorChain", testOperatorChain),
+        ("testDateParsing", testDateParsing),
+        ("testLocaleParsing", testLocaleParsing),
+        ("testOptionalOperatorList", testOptionalOperatorList),
+        ("testNestedDictionaryOperators", testNestedDictionaryOperators)
+    ]
 }
 
 //MARK: Test Objects
